@@ -1,9 +1,9 @@
 # Git Workflow
-A popular and well-known branching model and strategy with a little tweak is used in BlissLauncher. 
+A popular and well-known branching model and strategy with a little tweak is used in Audical. 
 [Click here to read more about the original git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
 
 ## Main Branches
-At the very core, BlissLauncher have two main branches with infinite lifetime:
+At the very core, Audical have two main branches with infinite lifetime:
 - `master`
 - `dev`
 
@@ -123,7 +123,7 @@ $ ./tag-version.sh
 ```
 
 # Versioning
-Semantic Versioning is used for BlissLauncher that is every version is
+Semantic Versioning is used for Audical that is every version is
 named as major.minor.patch. For proper versioning, one MUST use the
 `bump-version.sh` every-time a new hotfix branch is created or intended
 features have been merged into dev branch and are ready to be released
