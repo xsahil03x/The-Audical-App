@@ -34,7 +34,7 @@ if [[ ${branch} = "master" ]]; then
     patch=$((`cat app/build.gradle | grep "versionPatch = " | awk '{print $4}'`))
 
     version="${major}.${minor}.${patch}"
-    git tag -a "v${version}" -m "Bliss Launcher Version ${version}"
+    git tag -a "v${version}" -m "Audical Version ${version}"
     echo -e "${QUESTION_FLAG} Do you want to push tag to remote now?[Y/n]: ${NOCOLOR}"
     read -r -p "" response
     response=${response,,}
