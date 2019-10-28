@@ -24,7 +24,7 @@ object Versions {
     const val rxjava = "2.2.11"
     const val rxandroid = "2.1.1"
     const val rxkotlin = "2.4.0"
-    const val ktlint = "0.34.2"
+    const val ktlint = "0.35.0"
 }
 
 object Libs {

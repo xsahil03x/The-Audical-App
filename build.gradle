@@ -25,7 +25,7 @@ buildscript {
 }
 
 plugins {
-    id "com.diffplug.gradle.spotless" version "3.14.0"
+    id "com.diffplug.gradle.spotless" version "3.25.0"
     id 'com.github.ben-manes.versions' version "0.25.0"
 }
 
@@ -44,7 +44,7 @@ subprojects {
         kotlin {
             target "**/*.kt"
             ktlint(Versions.ktlint)
-            licenseHeaderFile project.rootProject.file('spotless/copyright.kt')
+            licenseHeaderFile project.rootProject.file('spotless/copyright')
         }
     }
 }
