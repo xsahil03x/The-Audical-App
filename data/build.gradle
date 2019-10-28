@@ -1,0 +1,31 @@
+import com.audical.app.buildsrc.BuildApi
+import com.audical.app.buildsrc.Libs
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion BuildApi.compile_sdk
+    defaultConfig {
+        minSdkVersion BuildApi.min_sdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation Libs.Kotlin.stdlib
+    implementation Libs.AndroidX.appcompat
+    implementation Libs.AndroidX.coreKtx
+    testImplementation Libs.junit
+    androidTestImplementation Libs.AndroidX.Test.espressoCore
+}
